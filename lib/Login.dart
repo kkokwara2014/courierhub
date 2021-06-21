@@ -22,6 +22,7 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
+
                 Text(
                   'CourierHub!',
                   style: TextStyle(
@@ -40,7 +41,7 @@ class _LoginState extends State<Login> {
                   thickness: 5,
                   height: 20,
                 ),
-                SizedBox(height: 30,),
+                SizedBox(height: 30,),               
                 Text(
                   'Login with your credentials',
                   style: TextStyle(

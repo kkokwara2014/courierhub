@@ -13,7 +13,7 @@ class _LoginState extends State<Login> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Login'),
+          title: Text(''),
           centerTitle: true,
           backgroundColor: Color(0xfff26836),
         ),
@@ -22,9 +22,11 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-
+                SizedBox(
+                  height: 50,
+                ),
                 Text(
-                  'CourierHub!',
+                  'Welcome',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -38,75 +40,113 @@ class _LoginState extends State<Login> {
                       color: Color(0xfff26836)),
                 ),
                 Divider(
-                  thickness: 5,
-                  height: 20,
+                  thickness: 3,
+                  height: 15,
                 ),
-                SizedBox(height: 30,),               
+                SizedBox(
+                  height: 30,
+                ),
                 Text(
-                  'Login with your credentials',
+                  'Please log in',
                   style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: Color(0xff322f6a)),
                 ),
-                SizedBox(height: 30.0,),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: "Your Email",
-                    labelText: "Email",
-                    labelStyle: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
-                    ),
-                    border: OutlineInputBorder()
-                  ),
-                  keyboardType: TextInputType.emailAddress,
+                SizedBox(
+                  height: 30.0,
                 ),
-                SizedBox(height: 10.0,),
                 TextField(
                   decoration: InputDecoration(
-                    hintText: "Your Password",
-                    labelText: "Password",
+                    prefixIcon: Icon(Icons.perm_identity_sharp),
+                    hintText: "Your Email or Phone Number",
                     labelStyle: TextStyle(
                       fontSize: 16,
                       color: Colors.black,
                     ),
-                    border: OutlineInputBorder()
                   ),
                   keyboardType: TextInputType.text,
                 ),
-                SizedBox(height: 10.0,),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
+                SizedBox(
+                  height: 10.0,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.lock),
+                    hintText: "Password",
+                    labelStyle: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                  keyboardType: TextInputType.text,
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  
+                  style: OutlinedButton.styleFrom(
+                    shape: StadiumBorder(),
+                    backgroundColor: Color(0xfff26836),
+                    // tapTargetSize:
+                  ),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    OutlinedButton(
+                    FlatButton(
                       onPressed: () {},
                       child: Text(
-                        'Log In',
+                        "Forgot Password?",
                         style: TextStyle(
-                          fontSize: 18,
-                          color: Color(0xff322f6a),
-                        ),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xfff26836)),
                       ),
                     ),
-                    SizedBox(width: 5,),
-                    OutlinedButton(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                          return Register();
-                        }));
-                      },
-                      child: Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color(0xff322f6a),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Don't have account?",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal,
+                            color: Colors.black,
+                          ),
                         ),
-                      ),
+                        FlatButton(
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (BuildContext context) {
+                              return Register();
+                            }));
+                          },
+                          child: Text(
+                            "Sign Up?",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xfff26836),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
-                ),
+                )
               ],
             ),
           ),

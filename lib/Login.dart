@@ -45,8 +45,8 @@ class _LoginState extends State<Login> {
                   Divider(
                     thickness: 3,
                     height: 10,
-                    indent: 60,
-                    endIndent: 60,
+                    indent: 80,
+                    endIndent: 80,
                   ),
                   SizedBox(
                     height: 25,
@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
                   ),
                   TextField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.perm_identity_sharp),
+                      prefixIcon: Icon(Icons.mail),
                       hintText: "Your Email or Phone Number",
                       labelStyle: TextStyle(
                         fontSize: 16,

@@ -30,10 +30,10 @@ class _LoginState extends State<Login> {
                       color: Color(0xff322f6a)),
                 ),
                 Text(
-                  'Integrated Courier Service Platform you can trust',
+                  'Integrated Courier Service Platform you can trust.',
                   style: TextStyle(
                       fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.normal,
                       color: Color(0xfff26836)),
                 ),
                 Divider(

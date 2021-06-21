@@ -64,7 +64,7 @@ class _LoginState extends State<Login> {
                   TextField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.mail),
-                      hintText: "Your Email or Phone Number",
+                      hintText: "Email or Phone Number",
                       labelStyle: TextStyle(
                         fontSize: 16,
                         color: Colors.black,
@@ -84,6 +84,7 @@ class _LoginState extends State<Login> {
                         color: Colors.black,
                       ),
                     ),
+                    obscureText: true,
                     keyboardType: TextInputType.text,
                   ),
                   SizedBox(

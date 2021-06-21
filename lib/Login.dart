@@ -23,9 +23,28 @@ class _LoginState extends State<Login> {
             child: Column(
               children: [
                 Text(
+                  'CourierHub!',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff322f6a)),
+                ),
+                Text(
+                  'Integrated Courier Service Platform you can trust',
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xfff26836)),
+                ),
+                Divider(
+                  thickness: 5,
+                  height: 20,
+                ),
+                SizedBox(height: 30,),
+                Text(
                   'Login with your credentials',
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: Color(0xff322f6a)),
                 ),
@@ -57,6 +76,7 @@ class _LoginState extends State<Login> {
                 ),
                 SizedBox(height: 10.0,),
                 Row(
+                  mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     OutlinedButton(

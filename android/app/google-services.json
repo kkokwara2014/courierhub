@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781458551436",
+    "project_id": "courierhub-f6747",
+    "storage_bucket": "courierhub-f6747.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781458551436:android:112605db1a84bedb8701a9",
+        "android_client_info": {
+          "package_name": "com.example.courierhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781458551436-rkfgdk9ctekqboag3m1927rpjq5o3cvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDROsJv-W6IgcUTMmXEHzDFWM9NDAzYXBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781458551436-rkfgdk9ctekqboag3m1927rpjq5o3cvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

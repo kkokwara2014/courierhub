@@ -8,16 +8,20 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+  String myEmail = '';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Log In'),
-          centerTitle: true,
-          backgroundColor: Color(0xfff26836),
-        ),
+        // appBar: AppBar(
+        //   title: Text('Log In'),
+        //   centerTitle: true,
+        //   backgroundColor: Color(0xfff26836),
+        // ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -35,20 +39,15 @@ class _LoginState extends State<Login> {
                         fontWeight: FontWeight.bold,
                         color: Color(0xff322f6a)),
                   ),
-                  Text(
-                    'Integrated Courier Service Platform you can trust.',
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.normal,
-                        color: Color(0xfff26836)),
+                  SizedBox(
+                    height: 30,
                   ),
-                  SizedBox(height: 10,),
-                  Divider(
-                    thickness: 3,
-                    height: 10,
-                    indent: 80,
-                    endIndent: 80,
-                  ),
+                  // Divider(
+                  //   thickness: 3,
+                  //   height: 10,
+                  //   indent: 80,
+                  //   endIndent: 80,
+                  // ),
                   SizedBox(
                     height: 25,
                   ),
@@ -63,6 +62,7 @@ class _LoginState extends State<Login> {
                     height: 30.0,
                   ),
                   TextField(
+                    controller: emailController,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.mail),
                       hintText: "Email or Phone Number",
@@ -77,6 +77,7 @@ class _LoginState extends State<Login> {
                     height: 10.0,
                   ),
                   TextField(
+                    controller: passwordController,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock),
                       hintText: "Password",
@@ -96,6 +97,11 @@ class _LoginState extends State<Login> {
                       Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
                         return Dashboard();
                       }));
+
+                      // emailController.text==''?myEmail='':myEmail=emailController.text;
+                      // setState(() {
+                      //   myEmail = emailController.text;
+                      // });
                     },
                     style: OutlinedButton.styleFrom(
                       shape: StadiumBorder(),
@@ -109,7 +115,6 @@ class _LoginState extends State<Login> {
                         color: Colors.white,
                       ),
                     ),
-                  
                   ),
                   SizedBox(
                     height: 20,
@@ -117,6 +122,10 @@ class _LoginState extends State<Login> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Text('$myEmail'),
+                      SizedBox(
+                        height: 15,
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: Text(

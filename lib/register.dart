@@ -182,7 +182,7 @@ class Register extends StatelessWidget {
                             color: Colors.black,
                           ),
                         ),
-                        FlatButton(
+                        TextButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
                                 builder: (BuildContext context) {

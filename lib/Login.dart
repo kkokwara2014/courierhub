@@ -1,3 +1,4 @@
+import 'package:courierhub/dashboard.dart';
 import 'package:courierhub/register.dart';
 import 'package:flutter/material.dart';
 
@@ -91,7 +92,11 @@ class _LoginState extends State<Login> {
                     height: 15.0,
                   ),
                   OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                        return Dashboard();
+                      }));
+                    },
                     style: OutlinedButton.styleFrom(
                       shape: StadiumBorder(),
                       backgroundColor: Color(0xfff26836),
@@ -112,7 +117,7 @@ class _LoginState extends State<Login> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      FlatButton(
+                      TextButton(
                         onPressed: () {},
                         child: Text(
                           "Forgot Password?",
@@ -133,7 +138,7 @@ class _LoginState extends State<Login> {
                               color: Colors.black,
                             ),
                           ),
-                          FlatButton(
+                          TextButton(
                             onPressed: () {
                               Navigator.push(context, MaterialPageRoute(
                                   builder: (BuildContext context) {

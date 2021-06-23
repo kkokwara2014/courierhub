@@ -7,12 +7,14 @@ class Register extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Sign Up'),
-          centerTitle: true,
-          backgroundColor: Color(0xfff26836),
-        ),
+        // appBar: AppBar(
+        //   title: Text('Sign Up'),
+        //   centerTitle: true,
+        //   backgroundColor: Color(0xfff26836),
+        // ),
+        
         body: Center(
+          
           child: SingleChildScrollView(
             reverse: true,
             child: Column(

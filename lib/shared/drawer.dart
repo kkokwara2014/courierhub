@@ -1,4 +1,10 @@
 
+import 'package:courierhub/pages/earnings.dart';
+import 'package:courierhub/pages/settings.dart';
+import 'package:courierhub/pages/support.dart';
+import 'package:courierhub/pages/triphistory.dart';
+import 'package:courierhub/pages/wallet.dart';
+import 'package:courierhub/pages/worksummary.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -85,7 +91,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return TripHistory();
                     }));
                   },
                 ),
@@ -102,7 +108,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return Earnings();
                     }));
                   },
                 ),
@@ -119,7 +125,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return Wallet();
                     }));
                   },
                 ),
@@ -136,7 +142,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return Settings();
                     }));
                   },
                 ),
@@ -153,7 +159,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return WorkSummary();
                     }));
                   },
                 ),
@@ -167,11 +173,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     ),
                   ),
                   onTap: (){
-                    Navigator.of(context).pop();
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
-                    }));
+                    //Share with a friend
                   },
                 ),
                 ListTile(
@@ -187,7 +189,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     Navigator.of(context).pop();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
+                      return Support();
                     }));
                   },
                 ),
@@ -201,11 +203,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                     ),
                   ),
                   onTap: (){
-                    Navigator.of(context).pop();
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (BuildContext context) {
-                      return Dashboard();
-                    }));
+                    //logout user
                   },
                 ),
                 SizedBox(

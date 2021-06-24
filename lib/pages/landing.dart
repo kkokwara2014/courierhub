@@ -90,10 +90,6 @@ class LandingPage extends StatelessWidget {
                           return Dashboard();
                         }));
 
-                        // emailController.text==''?myEmail='':myEmail=emailController.text;
-                        // setState(() {
-                        //   myEmail = emailController.text;
-                        // });
                       },
                       style: OutlinedButton.styleFrom(
                         shape: StadiumBorder(),

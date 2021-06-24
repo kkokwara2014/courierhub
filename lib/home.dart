@@ -43,8 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Image.asset(
                           'assets/shared/images/logo-white.png',
-                          height: 180,
-                          width: 180,
+                          height: 150,
+                          width: 150,
                         ),
                         Padding(padding: EdgeInsets.only(top: 10.0)),
                         

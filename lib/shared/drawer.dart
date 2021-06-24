@@ -81,7 +81,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.moneyBill),
@@ -92,7 +98,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.wallet),
@@ -103,7 +115,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.cog),
@@ -114,7 +132,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.tachometerAlt),
@@ -125,7 +149,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.shareAlt),
@@ -136,7 +166,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.questionCircle),
@@ -147,7 +183,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 ListTile(
                   leading: Icon(FontAwesomeIcons.signOutAlt),
@@ -158,7 +200,13 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: null,
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Dashboard();
+                    }));
+                  },
                 ),
                 SizedBox(
                   height: 60,

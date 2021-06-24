@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:courierhub/Login.dart';
+// import 'package:courierhub/Login.dart';
+import 'package:courierhub/pages/landing.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -9,18 +10,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-@override
+  @override
   void initState() {
     super.initState();
-    Timer(
-      Duration(seconds: 5), 
-      (){
-        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-          return Login();
-        }));
-      }
-    );
+    Timer(Duration(seconds: 5), () {
+      Navigator.push(context,
+          MaterialPageRoute(builder: (BuildContext context) {
+        // return Login();
+        return LandingPage();
+      }));
+    });
   }
 
   @override
@@ -32,9 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
           fit: StackFit.expand,
           children: [
             Container(
-              decoration: BoxDecoration(
-                color: Color(0xfff26836)
-              ),
+              decoration: BoxDecoration(color: Color(0xfff26836)),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -44,25 +41,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 70.0,
-                          child: Icon(
-                            Icons.shopping_cart,
-                            color: Color(0xff322f6a),
-                            size: 70.0,
-                          
-                          ),
+                        Image.asset(
+                          'assets/shared/images/logo-white.png',
+                          height: 180,
+                          width: 180,
                         ),
                         Padding(padding: EdgeInsets.only(top: 10.0)),
-                        Text(
-                          'CourierHub',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                        
                       ],
                     ),
                   ),
@@ -76,7 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(
                         padding: EdgeInsets.only(top: 20.0),
                       ),
-                      Text('Integrated Courier Service Provider',
+                      Text(
+                        'Integrated Courier Service Provider',
                         style: TextStyle(
                           color: Color(0xff322f6a),
                           fontWeight: FontWeight.bold,
@@ -84,7 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ],
-                    
                   ),
                   flex: 1,
                 ),
@@ -93,7 +78,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-        
     );
   }
 }

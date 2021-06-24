@@ -11,6 +11,7 @@ class _EarningsState extends State<Earnings> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         drawer: DashboardDrawer(),
         appBar: AppBar(

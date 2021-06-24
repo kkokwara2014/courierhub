@@ -11,6 +11,7 @@ class _TripHistoryState extends State<TripHistory> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         drawer: DashboardDrawer(),
         appBar: AppBar(

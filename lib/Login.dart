@@ -1,4 +1,3 @@
-import 'package:courierhub/dashboard.dart';
 import 'package:courierhub/register.dart';
 import 'package:courierhub/services/auth.dart';
 import 'package:flutter/material.dart';

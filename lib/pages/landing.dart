@@ -22,7 +22,7 @@ class LandingPage extends StatelessWidget {
                       height: 50,
                     ),
                     Image.asset(
-                      'assets/shared/images/logo-white.png',
+                      'assets/shared/images/logo_white.png',
                       height: 120,
                       width: 120,
                     ),

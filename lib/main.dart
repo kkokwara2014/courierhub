@@ -1,8 +1,5 @@
 import 'package:courierhub/home.dart';
-import 'package:courierhub/models/usermodel.dart';
-import 'package:courierhub/services/auth.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());

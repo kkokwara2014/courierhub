@@ -18,6 +18,7 @@ class _DashboardState extends State<Dashboard> {
           title: Text('Dashboard'),
           centerTitle: true,
           backgroundColor: Color(0xfff26836),
+          
         ),
         body: Container(
           padding: EdgeInsets.all(8.0),

@@ -18,6 +18,7 @@ class _SupportState extends State<Support> {
           title: Text('Support'),
           centerTitle: true,
           backgroundColor: Color(0xfff26836),
+          elevation: 0.0,
         ),
         body: Container(
           padding: EdgeInsets.all(8.0),

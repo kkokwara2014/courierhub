@@ -1,4 +1,4 @@
-import 'package:courierhub/Login.dart';
+import 'package:courierhub/login.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatelessWidget {

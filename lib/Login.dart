@@ -1,5 +1,6 @@
 import 'package:courierhub/dashboard.dart';
 import 'package:courierhub/register.dart';
+import 'package:courierhub/services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -8,6 +9,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final AuthService _authService = AuthService();
+
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
   String myEmail = '';
@@ -17,11 +20,6 @@ class _LoginState extends State<Login> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text('Log In'),
-        //   centerTitle: true,
-        //   backgroundColor: Color(0xfff26836),
-        // ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -42,12 +40,7 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 30,
                   ),
-                  // Divider(
-                  //   thickness: 3,
-                  //   height: 10,
-                  //   indent: 80,
-                  //   endIndent: 80,
-                  // ),
+                  
                   SizedBox(
                     height: 25,
                   ),
@@ -93,15 +86,19 @@ class _LoginState extends State<Login> {
                     height: 15.0,
                   ),
                   OutlinedButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                        return Dashboard();
-                      }));
+                    onPressed: () async {
+                      // Navigator.push(context,
+                      //     MaterialPageRoute(builder: (BuildContext context) {
+                      //   return Dashboard();
+                      // }));
 
-                      // emailController.text==''?myEmail='':myEmail=emailController.text;
-                      // setState(() {
-                      //   myEmail = emailController.text;
-                      // });
+                      dynamic result=await _authService.signInAnon();
+                      if (result==null) {
+                        print('error signing in');
+                      } else {
+                        print('signed in');
+                        print(result);
+                      }
                     },
                     style: OutlinedButton.styleFrom(
                       shape: StadiumBorder(),

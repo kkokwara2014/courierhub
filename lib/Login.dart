@@ -1,5 +1,4 @@
 import 'package:courierhub/register.dart';
-import 'package:courierhub/services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -8,7 +7,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  final AuthService _authService = AuthService();
+  // final AuthService _authService = AuthService();
 
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
@@ -85,19 +84,19 @@ class _LoginState extends State<Login> {
                     height: 15.0,
                   ),
                   OutlinedButton(
-                    onPressed: () async {
+                    onPressed: () {
                       // Navigator.push(context,
                       //     MaterialPageRoute(builder: (BuildContext context) {
                       //   return Dashboard();
                       // }));
 
-                      dynamic result=await _authService.signInAnon();
-                      if (result==null) {
-                        print('error signing in');
-                      } else {
-                        print('signed in');
-                        print(result);
-                      }
+                      // dynamic result=await _authService.signInAnon();
+                      // if (result==null) {
+                      //   print('error signing in');
+                      // } else {
+                      //   print('signed in');
+                      //   print(result);
+                      // }
                     },
                     style: OutlinedButton.styleFrom(
                       shape: StadiumBorder(),

@@ -1,7 +1,5 @@
-import 'package:courierhub/login.dart';
-import 'package:flutter/material.dart';
 
-import '../dashboard.dart';
+import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
   @override
@@ -85,11 +83,7 @@ class LandingPage extends StatelessWidget {
                     ),
                     OutlinedButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (BuildContext context) {
-                          return Dashboard();
-                        }));
-
+                        Navigator.pushNamed(context, '/dashboard');
                       },
                       style: OutlinedButton.styleFrom(
                         shape: StadiumBorder(),
@@ -120,10 +114,7 @@ class LandingPage extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                return Login();
-                              }));
+                            Navigator.pushNamed(context, '/login');
                           },
                           child: Text(
                             "Login",

@@ -16,7 +16,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Timer(Duration(seconds: 5), () {
       Navigator.push(context,
           MaterialPageRoute(builder: (BuildContext context) {
-        // return Login();
         return LandingPage();
       }));
     });

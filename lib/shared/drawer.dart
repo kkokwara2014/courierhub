@@ -87,7 +87,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
             ),
             ListTile(
               leading: Icon(
-                Icons.money_rounded,
+                Icons.payment_sharp,
                 size: 25,
               ),
               title: Text(

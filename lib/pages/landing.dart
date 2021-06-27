@@ -1,4 +1,4 @@
-
+import 'package:courierhub/getstarted_register.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
@@ -83,7 +83,11 @@ class LandingPage extends StatelessWidget {
                     ),
                     OutlinedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/dashboard');
+                        // Navigator.pushNamed(context, '/dashboard');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => GetStartedRegister()));
                       },
                       style: OutlinedButton.styleFrom(
                         shape: StadiumBorder(),

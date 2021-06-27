@@ -1,3 +1,5 @@
+import 'package:courierhub/dashboard.dart';
+import 'package:courierhub/getstarted_register.dart';
 import 'package:courierhub/register.dart';
 import 'package:flutter/material.dart';
 
@@ -85,10 +87,10 @@ class _LoginState extends State<Login> {
                   ),
                   OutlinedButton(
                     onPressed: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (BuildContext context) {
-                      //   return Dashboard();
-                      // }));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (BuildContext context) {
+                        return Dashboard();
+                      }));
 
                       // dynamic result=await _authService.signInAnon();
                       // if (result==null) {
@@ -146,7 +148,7 @@ class _LoginState extends State<Login> {
                             onPressed: () {
                               Navigator.push(context, MaterialPageRoute(
                                   builder: (BuildContext context) {
-                                return Register();
+                                return GetStartedRegister();
                               }));
                             },
                             child: Text(

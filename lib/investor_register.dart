@@ -1,7 +1,7 @@
 import 'package:courierhub/login.dart';
 import 'package:flutter/material.dart';
 
-class Register extends StatelessWidget {
+class InvestorRegister extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,18 +24,22 @@ class Register extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xff322f6a)
-                      ),
+                      color: Color(0xff322f6a)),
                 ),
                 SizedBox(
                   height: 5,
                 ),
-                Text(
-                  'Get Started with a FREE ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.normal,
-                      color: Color(0xfff26836)),
+                Container(
+                  padding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 0.0),
+                  child: Center(
+                    child: Text(
+                      'Get Started with a FREE INVESTOR ACCOUNT',
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                          color: Color(0xfff26836)),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 8,

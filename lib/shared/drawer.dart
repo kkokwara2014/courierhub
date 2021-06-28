@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DashboardDrawer extends StatefulWidget {
-  @override
-  _DashboardDrawerState createState() => _DashboardDrawerState();
-}
 
-class _DashboardDrawerState extends State<DashboardDrawer> {
+class DashboardDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -63,7 +59,7 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.pushNamed(context, '/dashboard');
+                Navigator.of(context).pushNamed('/dashboard');
               },
             ),
             ListTile(
@@ -79,10 +75,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
-                  Navigator.pushNamed(context, '/triphistory');
-                });
+                  Navigator.of(context).pushNamed('/triphistory');
               },
             ),
             ListTile(
@@ -98,10 +92,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, '/earnings');
-                });
               },
             ),
             ListTile(
@@ -117,10 +109,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, '/wallet');
-                });
               },
             ),
             ListTile(
@@ -136,10 +126,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, '/settings');
-                });
               },
             ),
             ListTile(
@@ -155,10 +143,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, '/worksummary');
-                });
               },
             ),
             ListTile(
@@ -190,10 +176,8 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 ),
               ),
               onTap: () {
-                setState(() {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, '/support');
-                });
               },
             ),
             ListTile(
@@ -221,3 +205,4 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
     );
   }
 }
+
